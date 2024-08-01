@@ -23,7 +23,7 @@ app.use('/api/subscription', subscriptionRoutes);
 
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://oumaimaaloui:oumaimaaloui@cluster0.mqepi.mongodb.net/', {
+mongoose.connect('mongodb+srv://abdelaliiheb:3YVGRr423mMfuDpo@cluster0.oe0zj5r.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

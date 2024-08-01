@@ -149,7 +149,7 @@ export class ProductDetailedComponent implements AfterContentInit {
     const file_data = this.files[this.files.length - 1]
     const image = new FormData()
     image.append('file', file_data)
-    image.append('upload_preset', 'pfe_product')
+    image.append('upload_preset', 'pdf_product')
     image.append('cloud_name', 'dwkp2dnfs')
     if (this.files[0]) {
       this.addProductService.uploadImage(image).subscribe(res => {

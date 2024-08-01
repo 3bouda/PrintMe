@@ -9,13 +9,11 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: 'saidani_aziz@hotmail.com',
-    pass: 'solutiongroupnext1//', // Ensure this is correct and valid
+    user: 'abdelaliiheb@hotmail.com',
+    pass: '21751430abdelali', // Ensure this is correct and valid
   },
 });
 
-// user: 'pfe_2024@outlook.com',
-//   pass: 'pfepfe2024',
 
 
 // create json web token
@@ -55,7 +53,7 @@ exports.resetPassword = async (req, res) => {
     // Update the reset link to include '/api/auth'
     const resetLink = `${req.protocol}://${req.get('host')}/api/auth/reset/${resetToken}`;
     const mailOptions = {
-      from: 'saidani_aziz@hotmail.com',
+      from: 'abdelaliiheb@hotmail.com',
       to: email,
       subject: 'Password Reset Request',
       text: `Click the following link to reset your password: ${resetLink}`,

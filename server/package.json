@@ -23,15 +23,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AzizSaidani/PrintMe.git"
+    "url": "git+https://github.com/3bouda/PrintMe.git"
   },
   "keywords": [
     "server"
   ],
-  "author": "Oumaima",
+  "author": "3bouda",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AzizSaidani/PrintMe/issues"
+    "url": "https://github.com/3bouda/PrintMe/issues"
   },
-  "homepage": "https://github.com/AzizSaidani/PrintMe#readme"
+  "homepage": "https://github.com/3bouda/PrintMe#readme"
 }

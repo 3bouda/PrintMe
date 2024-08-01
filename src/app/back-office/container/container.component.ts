@@ -212,7 +212,7 @@ export class ContainerComponent implements AfterViewInit {
     const file_data = this.files[this.files.length - 1]
     const data = new FormData()
     data.append('file', file_data)
-    data.append('upload_preset', 'pfe_product')
+    data.append('upload_preset', 'pdf_product')
     data.append('cloud_name', 'dwkp2dnfs')
     this.service.uploadImage(data).subscribe((res) => {
       imagePath = res.url
