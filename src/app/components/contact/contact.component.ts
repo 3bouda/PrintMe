@@ -11,7 +11,7 @@ import {MatSnackBar} from "@angular/material/snack-bar";
   standalone: true,
   imports: [
     NgOptimizedImage,
-    FormsModule
+    FormsModule,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'

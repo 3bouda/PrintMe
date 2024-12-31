@@ -22,8 +22,6 @@ export class FactureComponent implements AfterContentInit {
     this.loadCartItems()
     this.createCommande()
   }
-
-
   constructor(private commande: CommandeService,
               @Inject(DOCUMENT) private document: Document,
               private service: FactureService,
@@ -37,7 +35,6 @@ export class FactureComponent implements AfterContentInit {
     if (data) {
       user = JSON.parse(data).id
     }
-    console.log(user)
     const method = 'Paiement en ligne'
     this.commande.addCommande(user, method).subscribe(() => {
       this.shopService.deleteCart(user).subscribe(() => {
@@ -47,10 +44,7 @@ export class FactureComponent implements AfterContentInit {
     }, (error) => {
       console.error('Error Commande bill:', error);
     })
-
   }
-
-
   generateFacture() {
     this.loadCartItems()
     this.service.generateBill(this.cart).subscribe((blob) => {
